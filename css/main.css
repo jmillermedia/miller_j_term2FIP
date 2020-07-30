@@ -21,11 +21,6 @@
 	display: none;
 }
 
-#wrapper {
-	margin: 0px auto;
-	width: 100vw;	
-}
-
 #rotatingKey {
 	width: 75px;
 	height: 75px;
