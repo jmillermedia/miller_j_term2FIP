@@ -48,7 +48,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	height: 110px;
 	display: flex;
 	flex-direction: row;
@@ -108,14 +108,14 @@
 #burgerNav ul li {
 	width: 100%;
 	margin: 0px auto;
-	margin-top: 32px;
+	margin-top: 16px;
 }
 
 #burgerNav ul li a {
 	display: block;
 	text-align: center;
 	font-family: Serpentine;
-	font-size: 36px;
+	font-size: 20px;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	color: #F2F2F2;
@@ -188,6 +188,7 @@
 #socMBut {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
 #socMBut img {
@@ -210,42 +211,37 @@
 	right: 0px auto;
 	left: 0px auto;
 	bottom: 5px;
-	font-size: 12px;
+	font-size: 10px;
 }
 
 /* INDEX.HTML START */
 #videoSplash {
 	object-fit: cover;
-	width: 100vw;
-	height: 100%;
 	position: absolute;
+	width: 100%;
+	height: 120%;
 	top: 0;
 	left: 0;
+	overflow: hidden;
 	z-index: -1;
 }
 
 #welcomeSection {
-	width: 100%;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 0;
+	margin-bottom: 32px;
 }
 
 #welcomeWriteup {
-	display: block;
 	font-family: hoboken-regular;
 	font-size: 3vw;
 	color: #000;
-	width: 80%;
-	/* height: 30%; */
 	height: auto;
 	line-height: 30px;
-	margin-left: auto;
-	margin-right: 64px;
 	padding: 32px;
 	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 10px;
+	border-radius: .5em;
 	margin: 0px auto;
 	margin-top: 300px;
 }
@@ -253,6 +249,9 @@
 #welcomeWriteup h2 {
 	position: absolute;
 	margin-top: -100px;
+	font-size: 36px;
+	left: 50%;
+	margin-left: -100.5px;
 }
 
 /* ABOUT US START */
@@ -705,6 +704,12 @@ input, textarea  {
 #addressArea iframe {
 	margin-top: 32px;
 }
+
+
+
+
+
+
 
 
 
