@@ -382,57 +382,51 @@
 }
 
 #aromas h2 {
+	position: absolute;
+	font-size: 2em;
 	text-align: center;
-	padding-top: 64px;
+	padding-top: 3.25em;
+	left: 50%;
+	margin-left: -81px;
 }
 
 #aromas h3 {
 	color: #F2F2F2;
-	font-size: 36px;
+	font-size: 2em;
 	font-family: Serpentine;
 	text-transform: uppercase;
+	padding-top: 140px;
+	margin-left: .75em;
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: black;
 }
 
 .aromaR {
 	display: flex;
-	margin-top: 290px;
-}
-
-.aromaR h3 {
-	padding-top: 128px;
-	padding-left: 64px;
-}
-
-.aromaR .aromaWriteup {
-	margin-left: 64px;
+	margin-top: 115px;
 }
 
 .aromaWriteup {
 	font-family: hoboken-regular;
 	color: #F2F2F2;
-	width: 500px;
-	height: 80px;
-	padding: 32px;
-	margin-top: 16px;
+	width: 40vw;
+	height: auto;
+	padding: 1em;
+	margin-top: 2em;
+	margin-left: 1.5em;
 	background-color: rgba(0,0,0,.5);
 	border-radius: 10px;
 	line-height: 20px;
 }
 
-
-.aromaR img {
-	position: absolute;
-	right: 0;
-}
-
 #aroma1 {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	background-image: url("../images/aroma1.jpg");
-	height: 420px;
-	width: 1200px;
+	height: auto;
+	width: 100%;
+	padding-bottom: 9em;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -442,43 +436,40 @@
 	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
 }
 
-#aroma2 {
-	background-image: url("../images/aroma2.jpg");
-	height: 420px;
-	width: 1200px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+.aromaR img {
+	max-height: 342px;
+	max-width: 90px;
+	position: absolute;
+	right: 15%;
+	width: 20vw;
+	top: 30%;
 }
 
-#aroma3 {
-	background-image: url("../images/aroma3.jpg");
-	height: 420px;
-	width: 1200px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+.aromaSelection {
+	font-size: .75em;
+	font-family: hoboken-regular;
+	color: #F2F2F2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #cb2229;
+	border-top: 1px solid black;
+	padding: 1em;
 }
 
-#aroma4 {
-	background-image: url("../images/aroma4.jpg");
-	height: 420px;
-	width: 1200px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+.aromaSelection img {
+	height: 80%;
+	width: 80%;
+	max-width: 80%;
+	max-height: 80%;
+}
+
+.aromaButton {
+	text-align: center;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* PROMOTIONS.HTML START */
@@ -1020,7 +1011,7 @@ input, textarea  {
 	}
 	
 	.aromaR h3 {
-		padding-top: 128px;
+		padding-top: 50px;
 		padding-left: 15%;
 	}
 	
@@ -1042,8 +1033,8 @@ input, textarea  {
 	}
 	
 	.aromaR img {
-		width: auto;
-		height: auto;
+		max-width: 145px;
+		max-height: 554px;
 		position: absolute;
 		right: 20%;
 		top: 15%;
@@ -1054,6 +1045,7 @@ input, textarea  {
 		background-image: url("../images/superFreshOriginaDesktop.jpg");
 		height: 690px;
 		width: 100%;
+		padding-bottom: 0;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -1065,6 +1057,7 @@ input, textarea  {
 
 	.aromaSelection {
 		font-family: hoboken-regular;
+		text-align: center;
 		color: #F2F2F2;
 		display: flex;
 		flex-direction: row;
@@ -1078,6 +1071,10 @@ input, textarea  {
 		cursor: pointer;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.aromaButton:hover {
+		text-decoration: underline;
 	}
 	
 	/* PROMOTIONS.HTML START */
