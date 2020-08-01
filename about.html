@@ -18,7 +18,7 @@
 				<nav id="headerNav">
 					<h2 class="hidden">Main Header Navigation</h2>
 					<ul>
-						<li><a href="#">About Us</a></li>
+						<li id="selected"><a href="#">About Us</a></li>
 						<li><a href="aromas.html">Aromas</a></li>
 						<li><a href="promotions.html">Promotions</a></li>
 						<li><a href="merch.html">Merch</a></li>
@@ -44,48 +44,61 @@
 		</header>
 
 	<section id="aboutUsSection">
-		<h2 id="pageTitle">ABOUT US</h2>
+
 		<div id="partnerSection">
-	<article id="partnerArticle">
-		<h3 id="articleHeader">How we came to partner:</h3>
-		<div id="partnerRow">
-		<p>Taste shouldn’t be the only thing you appreciate while enjoying our beer. Our food scientists are always hard at work developing new tastes to bring to our beer. They just so happened to discover a new technology that can make your clothes smell great, without sacrificing taste. That’s right! BECK’S® still has the same great taste with the added benefit of smelling great! The obvious answer was to team up with Renuzit® Brand Snuggle® Fabric Refresher, the professionals of fresh smelling clothes. We knew immediately we had to get this new beer into the hands of our customers with the highest standard of taste and smell.</p>
-		<img src="images/introducing.jpg" alt="Introducing Snuggle Beer" id="aboutHero">
-	</div>
-</div>
-	</article>
+			<h2 id="pageTitle">ABOUT US</h2>
+			<article id="partnerArticle">
+				<h3 id="articleHeader">How we came to partner:</h3>
+				<div id="partnerRow">
+					<p>Taste shouldn’t be the only thing you appreciate while enjoying our beer. Our food scientists are always hard at work developing new tastes to bring to our beer. They just so happened to discover a new technology that can make your clothes smell great, without sacrificing taste. That’s right! BECK’S® still has the same great taste with the added benefit of smelling great! The obvious answer was to team up with Renuzit® Brand Snuggle® Fabric Refresher, the professionals of fresh smelling clothes. We knew immediately we had to get this new beer into the hands of our customers with the highest standard of taste and smell.</p>
+						<img src="images/introducing.jpg" alt="Introducing Snuggle Beer" id="aboutHero">
+				</div>
+		</div>
+			</article>
 
 	<section id="awardsSection">
-		<h2 id="pageTitle">Awards</h2>
+		<img src="images/justKey.svg" alt="Rotating Key" id="rotatingKey">
+		<h2>Awards</h2>
 		<div id="awardGrid">
 		<div class="award">
-			<img src="images/award1.svg" alt="Outstanding Olefactory Award">
+			<img src="images/award0.svg" alt="Outstanding Olefactory Award">
 			<h3>Outstanding Olefactory Award</h3>
 			<p>Awarded in Banff, Alberta, the Outstanding Olfactory Award is awarded to products that excel at "making the world smell better, one product at a time". It is an honour to be presented with this award as we take pride in creating a product that will provide fresh scents in the most exiting way. We share this award with our sister company,  Renuzit® Brand Snuggle®, who have won many times in the past. Let it serve as our commitment to providing only the freshest scents through our beer!</p>
 		</div>
-
 		<div class="award">
-			<img src="images/award2.svg" alt="Food Innovation Award Award">
+			<img src="images/award1.svg" alt="Food Innovation Award Award">
 			<h3>Food Innovation Award</h3>
 			<p>The Food Innovation Award is awarded to products that take food creation and consumption to the next level. Only the most innovative food presentation and production processes are given this award, so we take pride in receiving this award in Toronto, Ontario in 2020. We stand by our new  product and the guarantee that it will keep your clothes smelling fresh for as long you you're enjoying it!</p>
 		</div>
 
 		<div class="award">
-			<img src="images/award3.svg" alt="Outstanding Olefactory Award">
+			<img src="images/award2.svg" alt="Outstanding Olefactory Award">
 			<h3>Brewery Of The Month Award</h3>
 			<p>The prestigious Brewery Of The Year Award is given to breweries of the highest quality. With such competitors as Labatts, Coors, Molson, and the like, we were ecstatic to receive this award presented in Montreal, Quebec. While it's set the bar for our quality, it also motivates us to continue providing beer of the utmost quality, held to the highest standards. This award has put us on the world stage, and we intend on continues to provide those standards to the beer drinkers of the world!</p>
+		</div>
+
+		<div class="mobileAward">
+			<a class="prev">&#10094;</a>
+			<a class="next">&#10095;</a>
+			<img src="images/award1.svg" alt="Outstanding Olefactory Award" id="mobileAwardPic">
+			<h3 class="awardName"></h3>
+			<p class="awardInfo"></p>
+			<div style="text-align:center">
+				<span class="dot activeDot" data-offset="0"></span>
+				<span class="dot" data-offset="1"></span>
+				<span class="dot" data-offset="2"></span>
+			</div>
 		</div>
 	</div>
 	</section>
 
-	<img src="images/justKey.svg" alt="a rotating key" id="rotatingKey">
-
 	<section id="FAQ">
 	<div id="FAQWrapper">
-		<h2 id="pageTitle">F.A.Q.</h2>
+		<h2 class="hidden">F.A.Q.</h2>
 		
 		<img src="images/FAQHero.jpg" alt="FAQ Beer photo">
 		<div id="FAQRow">
+			<span id="pageTitle">F.A.Q.</span>
 		<p>Q: Does the beer taste like the “aromas” advertised?</p>
 		
 		<p>A: No! The aromas are more descriptions of how your clothes will smell as you enjoy our product. All of our BECK’S® & Renuzit® Snuggle® products come with the same great taste as the original BECK’S® beer brand. The only choice you need to make is how you want your clothes to smell. The only addition you’ll notice is cleaner, fresher, smelling clothes!</p>
@@ -130,8 +143,9 @@
 					<li><a href="merch.html">Merch</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
+				
 		</nav>
-
+		<button type="image" id="toTop"><img src="images/Arrow.svg" alt="To Top Arrow"> Back To Top</button>
 		<p id="copyright">© 2020 BECK’S® Renuzit® Brand Snuggle® | Site Design: Jonathan Miller </p>
 
 	</footer>
