@@ -379,141 +379,97 @@
 
 #aromas {
 	background-color: #c2c9ce;
-	padding-bottom: 64px;
-}
-
-#aromas.pageTitle {
-	padding-top: 64px;
 }
 
 #aromas h2 {
+	position: absolute;
+	font-size: 2em;
 	text-align: center;
-	padding-top: 64px;
+	padding-top: 3.25em;
+	left: 50%;
+	margin-left: -81px;
 }
 
 #aromas h3 {
 	color: #F2F2F2;
-	font-size: 36px;
+	font-size: 2em;
 	font-family: Serpentine;
 	text-transform: uppercase;
+	padding-top: 140px;
+	margin-left: .75em;
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: black;
 }
 
 .aromaR {
 	display: flex;
-	margin-top: 290px;
-}
-
-.aromaR h3 {
-	padding-top: 128px;
-	padding-left: 64px;
-}
-
-.aromaL h3 {
-	padding-top: 128px;
-	margin-left: 500px;
-}
-
-.aromaR .aromaWriteup {
-	margin-left: 64px;
-}
-
-.aromaL .aromaWriteup {
-	margin-left: 564px;
-}
-
-.aromaL h3 {
-	padding-top: 128px;
-	padding-left: 64px;
-}
-
-
-.aromaL {
-	display: flex;
-	flex-direction: row;
-	margin-top: 290px;
+	margin-top: 115px;
 }
 
 .aromaWriteup {
 	font-family: hoboken-regular;
 	color: #F2F2F2;
-	width: 500px;
-	height: 80px;
-	padding: 32px;
-	margin-top: 16px;
+	width: 40vw;
+	height: auto;
+	padding: 1em;
+	margin-top: 2em;
+	margin-left: 1.5em;
 	background-color: rgba(0,0,0,.5);
 	border-radius: 10px;
 	line-height: 20px;
 }
 
+#aroma1 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-image: url("../images/aroma1.jpg");
+	height: auto;
+	width: 100%;
+	padding-bottom: 9em;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+}
 
 .aromaR img {
-	width: 247px;
-	height: 725px;
+	max-height: 342px;
+	max-width: 90px;
 	position: absolute;
-	margin-left: 840px;
-	margin-top: -620px; 
+	right: 15%;
+	width: 20vw;
+	top: 30%;
 }
 
-.aromaL img {
-	width: 247px;
-	height: 725px;
-	position: absolute;
-	margin-left: 128px;
-	margin-top: -620px; 
+.aromaSelection {
+	font-size: .75em;
+	font-family: hoboken-regular;
+	color: #F2F2F2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #cb2229;
+	border-top: 1px solid black;
+	padding: 1em;
 }
 
-#aroma1 {
-	background-image: url("../images/aroma1.jpg");
-	height: 420px;
-	width: 1200px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+.aromaSelection img {
+	height: 80%;
+	width: 80%;
+	max-width: 80%;
+	max-height: 80%;
 }
 
-#aroma2 {
-	background-image: url("../images/aroma2.jpg");
-	height: 420px;
-	width: 1200px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-}
-
-#aroma3 {
-	background-image: url("../images/aroma3.jpg");
-	height: 420px;
-	width: 1200px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-}
-
-#aroma4 {
-	background-image: url("../images/aroma4.jpg");
-	height: 420px;
-	width: 1200px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+.aromaButton {
+	text-align: center;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* PROMOTIONS.HTML START */
@@ -1032,11 +988,7 @@ input, textarea  {
 	
 	#aromas {
 		background-color: #c2c9ce;
-		padding-bottom: 64px;
-	}
-	
-	#aromas.pageTitle {
-		padding-top: 64px;
+		padding-top: 115px;
 	}
 	
 	#aromas h2 {
@@ -1055,72 +1007,45 @@ input, textarea  {
 	
 	.aromaR {
 		display: flex;
-		margin-top: 290px;
+		margin-top: 0;
 	}
 	
 	.aromaR h3 {
-		padding-top: 128px;
-		padding-left: 64px;
-	}
-	
-	.aromaL h3 {
-		padding-top: 128px;
-		margin-left: 500px;
+		padding-top: 50px;
+		padding-left: 15%;
 	}
 	
 	.aromaR .aromaWriteup {
-		margin-left: 64px;
-	}
-	
-	.aromaL .aromaWriteup {
-		margin-left: 564px;
-	}
-	
-	.aromaL h3 {
-		padding-top: 128px;
-		padding-left: 64px;
-	}
-	
-	
-	.aromaL {
-		display: flex;
-		flex-direction: row;
-		margin-top: 290px;
+		margin-left: 15%;
 	}
 	
 	.aromaWriteup {
 		font-family: hoboken-regular;
+		font-size: 1.25em;
 		color: #F2F2F2;
-		width: 500px;
-		height: 80px;
+		width: 40vw;
+		height: auto;
 		padding: 32px;
 		margin-top: 16px;
 		background-color: rgba(0,0,0,.5);
 		border-radius: 10px;
-		line-height: 20px;
+		line-height: 50px;
 	}
-	
 	
 	.aromaR img {
-		width: 247px;
-		height: 725px;
+		max-width: 145px;
+		max-height: 554px;
 		position: absolute;
-		margin-left: 840px;
-		margin-top: -620px; 
-	}
-	
-	.aromaL img {
-		width: 247px;
-		height: 725px;
-		position: absolute;
-		margin-left: 128px;
-		margin-top: -620px; 
+		right: 20%;
+		top: 15%;
 	}
 	
 	#aroma1 {
-		background-image: url("../images/aroma1.jpg");
-		height: 420px;
-		width: 1200px;
+		position: relative;
+		background-image: url("../images/superFreshOriginaDesktop.jpg");
+		height: 690px;
+		width: 100%;
+		padding-bottom: 0;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -1129,44 +1054,27 @@ input, textarea  {
 		-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
 		box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
 	}
-	
-	#aroma2 {
-		background-image: url("../images/aroma2.jpg");
-		height: 420px;
-		width: 1200px;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+
+	.aromaSelection {
+		font-family: hoboken-regular;
+		text-align: center;
+		color: #F2F2F2;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: #cb2229;
+		border-top: 1px solid black;
+		padding: 1em;
 	}
-	
-	#aroma3 {
-		background-image: url("../images/aroma3.jpg");
-		height: 420px;
-		width: 1200px;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+
+	.aromaButton {
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
 	}
-	
-	#aroma4 {
-		background-image: url("../images/aroma4.jpg");
-		height: 420px;
-		width: 1200px;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+
+	.aromaButton:hover {
+		text-decoration: underline;
 	}
 	
 	/* PROMOTIONS.HTML START */
