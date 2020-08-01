@@ -379,11 +379,6 @@
 
 #aromas {
 	background-color: #c2c9ce;
-	padding-bottom: 64px;
-}
-
-#aromas.pageTitle {
-	padding-top: 64px;
 }
 
 #aromas h2 {
@@ -410,29 +405,8 @@
 	padding-left: 64px;
 }
 
-.aromaL h3 {
-	padding-top: 128px;
-	margin-left: 500px;
-}
-
 .aromaR .aromaWriteup {
 	margin-left: 64px;
-}
-
-.aromaL .aromaWriteup {
-	margin-left: 564px;
-}
-
-.aromaL h3 {
-	padding-top: 128px;
-	padding-left: 64px;
-}
-
-
-.aromaL {
-	display: flex;
-	flex-direction: row;
-	margin-top: 290px;
 }
 
 .aromaWriteup {
@@ -449,22 +423,13 @@
 
 
 .aromaR img {
-	width: 247px;
-	height: 725px;
 	position: absolute;
-	margin-left: 840px;
-	margin-top: -620px; 
-}
-
-.aromaL img {
-	width: 247px;
-	height: 725px;
-	position: absolute;
-	margin-left: 128px;
-	margin-top: -620px; 
+	right: 0;
 }
 
 #aroma1 {
+	display: flex;
+	flex-direction: column;
 	background-image: url("../images/aroma1.jpg");
 	height: 420px;
 	width: 1200px;
@@ -1032,11 +997,7 @@ input, textarea  {
 	
 	#aromas {
 		background-color: #c2c9ce;
-		padding-bottom: 64px;
-	}
-	
-	#aromas.pageTitle {
-		padding-top: 64px;
+		padding-top: 115px;
 	}
 	
 	#aromas h2 {
@@ -1055,72 +1016,44 @@ input, textarea  {
 	
 	.aromaR {
 		display: flex;
-		margin-top: 290px;
+		margin-top: 0;
 	}
 	
 	.aromaR h3 {
 		padding-top: 128px;
-		padding-left: 64px;
-	}
-	
-	.aromaL h3 {
-		padding-top: 128px;
-		margin-left: 500px;
+		padding-left: 15%;
 	}
 	
 	.aromaR .aromaWriteup {
-		margin-left: 64px;
-	}
-	
-	.aromaL .aromaWriteup {
-		margin-left: 564px;
-	}
-	
-	.aromaL h3 {
-		padding-top: 128px;
-		padding-left: 64px;
-	}
-	
-	
-	.aromaL {
-		display: flex;
-		flex-direction: row;
-		margin-top: 290px;
+		margin-left: 15%;
 	}
 	
 	.aromaWriteup {
 		font-family: hoboken-regular;
+		font-size: 1.25em;
 		color: #F2F2F2;
-		width: 500px;
-		height: 80px;
+		width: 40vw;
+		height: auto;
 		padding: 32px;
 		margin-top: 16px;
 		background-color: rgba(0,0,0,.5);
 		border-radius: 10px;
-		line-height: 20px;
+		line-height: 50px;
 	}
-	
 	
 	.aromaR img {
-		width: 247px;
-		height: 725px;
+		width: auto;
+		height: auto;
 		position: absolute;
-		margin-left: 840px;
-		margin-top: -620px; 
-	}
-	
-	.aromaL img {
-		width: 247px;
-		height: 725px;
-		position: absolute;
-		margin-left: 128px;
-		margin-top: -620px; 
+		right: 20%;
+		top: 15%;
 	}
 	
 	#aroma1 {
-		background-image: url("../images/aroma1.jpg");
-		height: 420px;
-		width: 1200px;
+		position: relative;
+		background-image: url("../images/superFreshOriginaDesktop.jpg");
+		height: 690px;
+		width: 100%;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -1129,44 +1062,22 @@ input, textarea  {
 		-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
 		box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
 	}
-	
-	#aroma2 {
-		background-image: url("../images/aroma2.jpg");
-		height: 420px;
-		width: 1200px;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+
+	.aromaSelection {
+		font-family: hoboken-regular;
+		color: #F2F2F2;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: #cb2229;
+		border-top: 1px solid black;
+		padding: 1em;
 	}
-	
-	#aroma3 {
-		background-image: url("../images/aroma3.jpg");
-		height: 420px;
-		width: 1200px;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-	}
-	
-	#aroma4 {
-		background-image: url("../images/aroma4.jpg");
-		height: 420px;
-		width: 1200px;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		-moz-box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
-		box-shadow: inset 0px 0px 30px 3px rgba(0,0,0,1);
+
+	.aromaButton {
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
 	}
 	
 	/* PROMOTIONS.HTML START */
