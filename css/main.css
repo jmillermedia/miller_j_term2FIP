@@ -152,7 +152,7 @@
 	color: white;
 	-webkit-text-stroke: 1px black;
 	font-family: Serpentine;
-	font-size: 60px;
+	font-size: 10vw;
 	text-transform: uppercase;
 }
 
@@ -632,7 +632,8 @@
 /* MERCH.HTML START */
 
 #merch {
-	background-color: #c2c9ce;
+	padding-top: 160px;
+	margin: 0 auto;
 }
 
 #merch p {
@@ -660,8 +661,6 @@
 	width: 300px;
 	height: 300px;
 	background-color: white;
-	border: 2px solid black;
-	border-radius: 4px;
 }
 
 #merch button {
@@ -671,15 +670,14 @@
 	color: #F2F2F2;
 	height: 40px;
 	position: absolute;
-	margin-left: 175px;
+	margin-left: 145px;
 	margin-top: 22px;
 	background-color: #cb2229;
 	border-radius: 5px;
 }
 
 #merch button:hover {
-	color: #000;
-	background-color: #c2c9ce;
+	background-color: #8B0000;
 }
 
 #merch button:active {
@@ -688,14 +686,20 @@
 }
 
 .merchInfo {
+	color: #F2F2F2;
+	position: relative;
 	display: flex;
 	flex-direction: column;
+	background-color: #cb2229;
+	padding: 1em;
+	border-radius: .5em;
 }
 
 .merchRow {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
 	padding-bottom: 64px;
 }
 
@@ -1288,7 +1292,7 @@ input, textarea  {
 	/* MERCH.HTML START */
 	
 	#merch {
-		background-color: #c2c9ce;
+		padding-top: 115px;
 	}
 	
 	#merch p {
@@ -1316,7 +1320,6 @@ input, textarea  {
 		width: 300px;
 		height: 300px;
 		background-color: white;
-		border: 2px solid black;
 		border-radius: 4px;
 	}
 	
@@ -1327,25 +1330,28 @@ input, textarea  {
 		color: #F2F2F2;
 		height: 40px;
 		position: absolute;
-		margin-left: 175px;
+		margin-left: 145px;
 		margin-top: 22px;
 		background-color: #cb2229;
 		border-radius: 5px;
 	}
 	
-	#merch button:hover {
-		color: #000;
-		background-color: #c2c9ce;
-	}
-	
 	#merch button:active {
 		background-color: #F2F2F2;
+		color: #000;
 		margin-top: 25px;
 	}
 	
 	.merchInfo {
+		color: #F2F2F2;
+		width: 268px;
+		height: 80px;
+		position: relative;
 		display: flex;
 		flex-direction: column;
+		background-color: #cb2229;
+		padding: 1em;
+		border-radius: .5em;
 	}
 	
 	.merchRow {
@@ -1450,4 +1456,5 @@ input, textarea  {
 	#footerNav ul li {
 		font-size: 12px;
 	}
+
 }

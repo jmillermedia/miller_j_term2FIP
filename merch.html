@@ -13,23 +13,39 @@
 	<div id="wrapper">
 		<h1 class="hidden">Merchandise Page</h1>
 	
-	<header id="mainHeader">
-		<h2 class="hidden">Main Header</h2>
-		<a href="index.html"><img src="images/mainLogo.svg" alt="Main Logo" id="mainLogo"></a>
-			<nav id="headerNav">
-				<h2 class="hidden">Header Navigation</h2>
-				<ul>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="aromas.html">Aromas</a></li>
-					<li><a href="promotions.html">Promotions</a></li>
-					<li><a href="merch.html">Merch</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-	</header>
+		<header id="mainHeader">
+			<h2 class="hidden">Main Header</h2>
+			<a href="index.html"><img src="images/mainLogo.svg" alt="Main Logo" id="mainLogo"></a>
+				<nav id="headerNav">
+					<h2 class="hidden">Main Header Navigation</h2>
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="aromas.html">Aromas</a></li>
+						<li><a href="promotions.html">Promotions</a></li>
+						<li class="selected"><a href="#">Merch</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+	
+				<div id="burgerButton">
+					<div class="burgerBar1"></div>
+					<div class="burgerBar2"></div>
+					<div class="burgerBar3"></div>
+				</div>
+				<nav id="burgerNav" class="hidden">
+	
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="aromas.html">Aromas</a></li>
+						<li><a href="promotions.html">Promotions</a></li>
+						<li><a href="#">Merch</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+		</header>
 
 	<section id="merch">
-		<h2 id="pageTitle">MERCH</h2>
+		<h2 id="pageTitle">MERCHANDISE</h2>
 
 
 	<div class="merchRow">
@@ -105,32 +121,35 @@
 	</section>
 
 	<footer id="mainFooter">
-	<h2 class="hidden">Main Footer Section</h2>
-		<nav id="socialMediaNav">
-			<h2 class="hidden">Social Media Navigation</h2>
-			<ul id="socMBut">
-				<li><a href="#"><img src="images/socm_facebook.svg" alt="facebook"></a></li>
-            <li id="twitter"><a href="#"><img src="images/socm_twitter.svg" alt="twitter"></a></li>
-            <li id="instagram"><a href="#"><img src="images/socm_insta.svg" alt="instagram"></a></li>
-            <li id="youtube"><a href="#"><img src="images/socm_youtube.svg" alt="youtube"></a></li>
-            
-        	</ul>
-		</nav>
-
-		<img id="typefaceLogo" src="images/typefaceLogo.svg" alt="Typeface Logo">
-
-		<nav id="footerNav">
-			<h2 class="hidden">Footer Navigation</h2>
-				<ul>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="aromas.html">Aromas</a></li>
-					<li><a href="promotions.html">Promotions</a></li>
-					<li><a href="merch.html">Merch</a></li>
-					<li><a href="contact.html">Contact</a></li>
+		<h2 class="hidden">Main Footer Section</h2>
+			<nav id="socialMediaNav">
+				<h2 class="hidden">Social Media Navigation</h2>
+				<ul id="socMBut">
+					<li><a href="#"><img src="images/socm_facebook.svg" alt="facebook"></a></li>
+				<li id="twitter"><a href="#"><img src="images/socm_twitter.svg" alt="twitter"></a></li>
+				<li id="instagram"><a href="#"><img src="images/socm_insta.svg" alt="instagram"></a></li>
+				<li id="youtube"><a href="#"><img src="images/socm_youtube.svg" alt="youtube"></a></li>
+				
 				</ul>
-		</nav>
-
-	</footer>
+			</nav>
+	
+			<img id="typefaceLogo" src="images/typefaceLogo.svg" alt="Typeface Logo">
+	
+			<nav id="footerNav">
+				<h2 class="hidden">Footer Navigation</h2>
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="aromas.html">Aromas</a></li>
+						<li><a href="promotions.html">Promotions</a></li>
+						<li><a href="merch.html">Merch</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					
+			</nav>
+			<button type="image" id="toTop"><img src="images/Arrow.svg" alt="To Top Arrow"> Back To Top</button>
+			<p id="copyright">© 2020 BECK’S® Renuzit® Brand Snuggle® | Site Design: Jonathan Miller </p>
+	
+		</footer>
 	
 	</div> <!-- wrapper div closing tag -->
 	<script src="js/main.js"></script>
