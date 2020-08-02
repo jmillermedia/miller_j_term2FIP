@@ -13,41 +13,54 @@
 	<div id="wrapper">
 		<h1 class="hidden">Promotions Page</h1>
 	
-	<header id="mainHeader">
-		<h2 class="hidden">Main Header</h2>
-		<a href="index.html"><img src="images/mainLogo.svg" alt="Main Logo" id="mainLogo"></a>
-			<nav id="headerNav">
-				<h2 class="hidden">Header Navigation</h2>
-				<ul>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="aromas.html">Aromas</a></li>
-					<li><a href="promotions.html">Promotions</a></li>
-					<li><a href="merch.html">Merch</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-	</header>
+		<header id="mainHeader">
+			<h2 class="hidden">Main Header</h2>
+			<a href="index.html"><img src="images/mainLogo.svg" alt="Main Logo" id="mainLogo"></a>
+				<nav id="headerNav">
+					<h2 class="hidden">Main Header Navigation</h2>
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="aromas.html">Aromas</a></li>
+						<li class="selected"><a href="#">Promotions</a></li>
+						<li><a href="merch.html">Merch</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+	
+				<div id="burgerButton">
+					<div class="burgerBar1"></div>
+					<div class="burgerBar2"></div>
+					<div class="burgerBar3"></div>
+				</div>
+				<nav id="burgerNav" class="hidden">
+	
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="aromas.html">Aromas</a></li>
+						<li><a href="#">Promotions</a></li>
+						<li><a href="merch.html">Merch</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+		</header>
 
 	<section id="promotions">
 		<h2 id="pageTitle">PROMOTIONS</h2>
 
-		<video width="1200" height="676" controls>
-			<source src="videos/15secAd.mp4" type="video/mp4">
-			Your browser does not support video.
-		</video>
+		<video src="videos/15secAd.mp4" controls poster="images/videoPoster.jpg" id="videoPromo"></video>
 
 		<img src="images/justKey.svg" alt="a rotating key" id="rotatingKey">
 
 		<div class="beerAdRow">
-			<img src="images/beerAd1.jpg" alt="Beer Ad 1">
-			<img src="images/beerAd2.jpg" alt="Beer Ad 2">
+			<img src="images/beerAd1.jpg" alt="Beer Ad 1" class="eachAd">
+			<img src="images/beerAd2.jpg" alt="Beer Ad 2" class="eachAd">
 		</div>
 
 		<img src="images/beerAd3.jpg" alt="Beer Ad 3" id="centerAd">
 
 		<div class="beerAdRow">
-		<img src="images/beerAd4.jpg" alt="Beer Ad 4">
-		<img src="images/beerAd5.jpg" alt="Beer Ad 5">
+		<img src="images/beerAd4.jpg" alt="Beer Ad 4" class="eachAd">
+		<img src="images/beerAd5.jpg" alt="Beer Ad 5" class="eachAd">
 		</div>
 	</section>
 
@@ -69,16 +82,18 @@
 		<nav id="footerNav">
 			<h2 class="hidden">Footer Navigation</h2>
 				<ul>
-					<li><a href="about.html">About Us</a></li>
+					<li><a href="#">About Us</a></li>
 					<li><a href="aromas.html">Aromas</a></li>
 					<li><a href="promotions.html">Promotions</a></li>
 					<li><a href="merch.html">Merch</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
+				
 		</nav>
+		<button type="image" id="toTop"><img src="images/Arrow.svg" alt="To Top Arrow"> Back To Top</button>
+		<p id="copyright">© 2020 BECK’S® Renuzit® Brand Snuggle® | Site Design: Jonathan Miller </p>
 
 	</footer>
-	
 	</div> <!-- wrapper div closing tag -->
 	<script src="js/main.js"></script>
 </body>

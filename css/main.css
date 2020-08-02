@@ -581,9 +581,11 @@
 /* PROMOTIONS.HTML START */
 
 #promotions {
-	padding-top: 32px;
+	width: 100%;
+	padding-top: 190px;
 	padding-bottom: 64px;
-	background-color: #c2c9ce;
+	background-image: url(../images/promoBG.jpg);
+	background-size: cover;
 }
 
 #promotions h2 {
@@ -592,17 +594,37 @@
 	margin-bottom: 32px;
 }
 
+#videoPromo {
+	display: block;
+	max-width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+
 .beerAdRow {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-around;
-	margin-top: 32px;
+	align-items: center;
+}
+
+.eachAd {
+	max-width: 80%;
+	margin-top: 2em;
+	height: auto;
+	border: 2px solid black;
+	border-radius: 8px;
 }
 
 #centerAd {
 	margin: 0px auto;
 	display: block;
-	margin-top: 32px;
+	margin-top: 2em;
+	max-width: 80%;
+	height: auto;
+	border: 2px solid black;
+	border-radius: 8px;
+
 }
 
 
@@ -832,10 +854,8 @@ input, textarea  {
 		box-shadow: 3px 3px 2px rgba(0,0,0,.75);
 	}
 
-	#selected {
+	.selected {
 		background-color: #000;
-		border-radius: 10px 10px 0px 0px;
-		box-shadow: 3px 3px 2px rgba(0,0,0,.75);
 	}
 	
 	#headerNav ul li a {
@@ -1238,9 +1258,10 @@ input, textarea  {
 	/* PROMOTIONS.HTML START */
 	
 	#promotions {
-		padding-top: 32px;
+		width: 100%;
+		padding-top: 115px;
 		padding-bottom: 64px;
-		background-color: #c2c9ce;
+		margin: 0 auto;
 	}
 	
 	#promotions h2 {
