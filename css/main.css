@@ -713,8 +713,13 @@
 
 #contactSection {
 	font-family: hoboken-regular;
+	padding-top: 160px;
 	padding-bottom: 64px;
-	background-color: #c2c9ce
+	background-color: #c2c9ce;
+	background-image: url(../images/contactBGDesktop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #contactSection h2 {
@@ -724,14 +729,14 @@
 }
 
 #contactFull {
+	max-width: 1200px;
+	margin: 0 auto;
 	display: flex;
-	flex-direction: row;
-	margin-left: 64px;
+	flex-direction: column;
 }
 
 #mainContact {
-	border-right: 2px grey solid;
-	width: 536px;
+	display: none;
 }
 
 fieldset {
@@ -744,7 +749,7 @@ input, textarea  {
 	font-size: 11px;
 	margin-bottom: 16px;
 	padding: 8px;
-	width: 250px;
+	width: 80%;
 	height: 8px;
 	background-color: #F2F2F2;
 	display: block;
@@ -753,7 +758,7 @@ input, textarea  {
 }
 
 #comments {
-	width: 360px;
+	width: 80%;
 	height: 200px;
 }
 
@@ -764,7 +769,7 @@ input, textarea  {
 	letter-spacing: 1px;
 	color: #F2F2F2;
 	height: 30px;
-	position: absolute;
+	position: initial;
 	background-color: #cb2229;
 	border-radius: 5px;
 }
@@ -780,8 +785,7 @@ input, textarea  {
 }
 
 #addressArea {
-	width: 356px;
-	margin-left: 64px;
+	display: none;
 }
 
 #addressArea h3 {
@@ -793,6 +797,28 @@ input, textarea  {
 	margin-top: 32px;
 }
 
+#mobileDisplay {
+	display: inline;
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: 2em;
+	border-radius: 0.5em 0.5em 0 0;
+}
+
+#mobileUpperAdress {
+	display: inline;
+	min-width: 150px;
+	align-self: center;
+}
+
+#upperContact {
+	display: flex;
+	flex-direction: row;
+	padding: 1em;
+}
+
+#mobileContactForm {
+	min-width: 150px;
+}
 
 
 
@@ -1371,6 +1397,7 @@ input, textarea  {
 	
 	#contactSection {
 		font-family: hoboken-regular;
+		padding-top: 115px;
 		padding-bottom: 64px;
 		background-color: #c2c9ce
 	}
@@ -1384,12 +1411,15 @@ input, textarea  {
 	#contactFull {
 		display: flex;
 		flex-direction: row;
-		margin-left: 64px;
+		justify-content: space-around;
 	}
 	
 	#mainContact {
-		border-right: 2px grey solid;
-		width: 536px;
+		display: inline;
+		width: 400px;
+		background-color: rgba(255, 255, 255, 0.5);
+		padding: 2em;
+		border-radius: 0.5em;
 	}
 	
 	fieldset {
@@ -1438,8 +1468,12 @@ input, textarea  {
 	}
 	
 	#addressArea {
-		width: 356px;
+		display: inline;
+		width: 400px;
 		margin-left: 64px;
+		background-color: #f2f2f283;
+		padding: 3em;
+		border-radius: 0.5em;
 	}
 	
 	#addressArea h3 {
@@ -1450,11 +1484,24 @@ input, textarea  {
 	#addressArea iframe {
 		margin-top: 32px;
 	}
+
+	#mobileDisplay {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1107px) {
 	#footerNav ul li {
 		font-size: 12px;
 	}
+}
 
+@media screen and (max-width: 425px) {
+	#upperContact {
+		flex-direction: column;
+	}
+
+	#mobileContactForm {
+		margin-top: 1em;
+	}
 }
