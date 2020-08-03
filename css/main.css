@@ -221,8 +221,7 @@
 #copyright {
 	color: #cb2229;
 	position: absolute;
-	right: 0px auto;
-	left: 0px auto;
+	right: 1em;
 	bottom: 5px;
 	font-size: 10px;
 }
@@ -298,7 +297,7 @@
 	padding-top: 6em;
 }
 
-#articleHeader {
+.articleHeader {
 	font-family: Serpentine;
 	color: white;
 	-webkit-text-stroke: 1px black;
@@ -759,10 +758,9 @@ input, textarea  {
 
 #comments {
 	width: 80%;
-	height: 200px;
 }
 
-#submit {
+#submitMobile {
 	font-family: Serpentine;
 	width: 80px;
 	text-transform: uppercase;
@@ -820,6 +818,9 @@ input, textarea  {
 	min-width: 150px;
 }
 
+#mobileMap {
+	width: 100%;
+}
 
 
 
@@ -1053,7 +1054,7 @@ input, textarea  {
 		text-align: center;
 	}
 	
-	#articleHeader {
+	.articleHeader {
 		font-family: Serpentine;
 		color: white;
 		-webkit-text-stroke: 1px black;
@@ -1416,7 +1417,6 @@ input, textarea  {
 	
 	#mainContact {
 		display: inline;
-		width: 400px;
 		background-color: rgba(255, 255, 255, 0.5);
 		padding: 2em;
 		border-radius: 0.5em;
@@ -1469,7 +1469,6 @@ input, textarea  {
 	
 	#addressArea {
 		display: inline;
-		width: 400px;
 		margin-left: 64px;
 		background-color: #f2f2f283;
 		padding: 3em;
