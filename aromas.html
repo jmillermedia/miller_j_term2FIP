@@ -51,55 +51,30 @@
 			
 			<div id="aroma1">
 				<h2 id="pageTitle">Aromas</h2>
-				<h3>SuperFresh Original</h3>
+				<h3 id="aromaType">SuperFresh Original</h3>
 					<p class="aromaWriteup">Dash away stink and welcome in snuggly freshness with scents of clean laundry and bright floral notes. Make your beer make you SuperFresh, especially in smaller spaces like lounges and pubs, with BECK’S® & Renuzit® Snuggle® SuperFresh Original.</p>
-						<img src="images/bottle0.png" alt="Beer Aroma Image">
+						<img src="images/bottle0.png" alt="Beer Aroma Image" id="beerBottle">
 			</div>
 		</div>
 		<section class="aromaSelection">
 			<h2 class="hidden">Select Your Aroma</h2>
-			<div class="aromaButton">
+			<div class="aromaButton" data-aroma="0">
 				<img src="images/buttonAroma0.svg" alt="SuperFresh Original">
 					<p>SuperFresh Original</p>
 			</div>
-			<div class="aromaButton">
+			<div class="aromaButton" data-aroma="1">
 				<img src="images/buttonAroma1.svg" alt="Linen Escape">
 					<p>Linen Escape</p>
 			</div>
-			<div class="aromaButton">
+			<div class="aromaButton" data-aroma="2">
 				<img src="images/buttonAroma2.svg" alt="Relaxing Lavender">
 					<p>Relaxing Lavender</p>
 			</div>
-			<div class="aromaButton">
+			<div class="aromaButton" data-aroma="3">
 				<img src="images/buttonAroma3.svg" alt="Enchanting Tropical">
 					<p>Enchanting Tropical</p>
 			</div>
 		</section>
-
-		<!-- <div class="aromaL">
-			<div id="aroma2">
-				<h3>Linen Escape</h3>
-					<p class="aromaWriteup">Get the perks of laundry day without having to do any laundry. The BECK’S® & Renuzit® Snuggle® Linen Escape beer is perfectly made to fill your nose with the inviting scents of clean laundry and fresh floral notes.</p>
-						<img src="images/aroma-beer.png" alt="Beer Aroma Image">
-			</div>
-		</div>
-
-		<div class="aromaR">
-			<div id="aroma3">
-				<h3>Relaxing Lavender</h3>
-					<p class="aromaWriteup">Gone are the days you need to go to the spa to soothe your soul and feel sweet serenity. Transform your beer into a spa-like getaway by filling every piece of clothing with the relaxing aroma of lavender with BECK’S® & Renuzit® Snuggle® Relaxing Lavender.</p>
-						<img src="images/aroma-beer.png" alt="Beer Aroma Image">
-			</div>
-		</div>
-
-		<div class="aromaL">
-			<div id="aroma4">
-				<h3>Enchanting Tropical</h3>
-					<p class="aromaWriteup">Delight in bright tropical aromas all year round. Be swept away by the invigorating scents of enchanting tropics, making every refreshing sip smell like a vacation with BECK’S® & Renuzit® Snuggle® Enchanting Tropical. We know you’ll enjoy the vibrant scent experience!</p>
-						<img src="images/aroma-beer.png" alt="Beer Aroma Image">
-			</div>
-		</div> -->
-
 	</section>
 
 	<footer id="mainFooter">
@@ -127,12 +102,13 @@
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 			</nav>
-	
+			<button id="toTop" style="display: none;"><img src="images/Arrow.svg" alt="To Top Arrow"> Back To Top</button>
 			<p id="copyright">© 2020 BECK’S® Renuzit® Brand Snuggle® | Site Design: Jonathan Miller </p>
 	
 		</footer>
 	
 	</div> <!-- wrapper div closing tag -->
 	<script src="js/main.js"></script>
+	<script src="js/aromas.js"></script>
 </body>
 </html>
