@@ -402,6 +402,11 @@
 	margin: 1em 0 1em 0;
 }
 
+#awardInfo {
+	width: 330px;
+	height: 220px;
+}
+
 .dot {
 	cursor: pointer;
 	height: 15px;
@@ -528,7 +533,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	background-image: url("../images/aroma1.jpg");
+	background-image: url("../images/aroma0.jpg");
 	height: auto;
 	width: 100%;
 	padding-bottom: 9em;
