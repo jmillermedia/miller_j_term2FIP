@@ -3,9 +3,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to Renuzit® Snuggle® BECK'S® BEER!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Snuggle Beer</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
 	
@@ -16,7 +18,23 @@
 		<h2 class="hidden">Main Header</h2>
 		<a href="#"><img src="images/mainLogo.svg" alt="Main Logo" id="mainLogo"></a>
 			<nav id="headerNav">
-				<h2 class="hidden">Main Header Navigation</h2>
+				<h3 class="hidden">Main Header Navigation</h3>
+				<ul>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="aromas.html">Aromas</a></li>
+					<li><a href="promotions.html">Promotions</a></li>
+					<li><a href="merch.html">Merch</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div id="burgerButton">
+				<div class="burgerBar1"></div>
+				<div class="burgerBar2"></div>
+				<div class="burgerBar3"></div>
+			</div>
+			<nav id="burgerNav" class="hidden">
+				<h3 class="hidden">Mobile Navigation</h3>
 				<ul>
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="aromas.html">Aromas</a></li>
@@ -28,12 +46,11 @@
 	</header>
 
 <section id="welcomeSection">
-		<h2 id="pageTitle">Welcome</h2>
+	<video autoplay muted loop src="videos/welcomSplash.mp4" id="videoSplash" class="videoSplash"></video>
+		
 
 		<div id="welcomeWriteup">
-
-			<img src="images/beer.jpg" alt="Some Beer">
-
+			<h2 id="pageTitle">Welcome</h2>
 			<p>BECK’S® has teamed up with Renuzit® Brand Snuggle® Fabric Refresher with a very exciting new product! Snuggle® Beer. A beer that makes the clothes you’re wearing smell great! Our patented technology includes a secret ingredient that releases a compound while you’re enjoying your beer. This technology is safely released through your skin to be absorbed by your clothes. While you’re socializing, everyone will enjoy the gentle scents from you.</p>
 		</div>
 
@@ -42,7 +59,7 @@
 	<footer id="mainFooter">
 	<h2 class="hidden">Main Footer Section</h2>
 		<nav id="socialMediaNav">
-			<h2 class="hidden">Social Media Navigation</h2>
+			<h3 class="hidden">Social Media Navigation</h3>
 			<ul id="socMBut">
 				<li><a href="#"><img src="images/socm_facebook.svg" alt="facebook"></a></li>
             <li id="twitter"><a href="#"><img src="images/socm_twitter.svg" alt="twitter"></a></li>
@@ -55,7 +72,7 @@
 		<img id="typefaceLogo" src="images/typefaceLogo.svg" alt="Typeface Logo">
 
 		<nav id="footerNav">
-			<h2 class="hidden">Footer Navigation</h2>
+			<h3 class="hidden">Footer Navigation</h3>
 				<ul>
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="aromas.html">Aromas</a></li>
@@ -64,10 +81,12 @@
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 		</nav>
+		<button id="toTop" style="display: none;"><img src="images/Arrow.svg" alt="To Top Arrow"> Back To Top</button>
+		<p id="copyright">© 2020 BECK’S® Renuzit® Brand Snuggle® | Site Design: Jonathan Miller </p>
 
 	</footer>
 	
 	</div> <!-- wrapper div closing tag -->
-	<script src="js/main.css"></script>
+	<script src="js/main.js"></script> 
 </body>
 </html>
